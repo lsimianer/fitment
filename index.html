@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="index, follow" />
+    <!-- adspace -->
+    <!-- bootstrap start cdns -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- bootstrap end cdns -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Corona Virus</title>
+    <meta name="description" content="">
+
+</head>
+
+<body>
+
+
+    <div class="jumbotron" id="header">
+        Best Fit Demo Playground
+    </div>
+
+    <div class="container" id="mainContainer">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top"
+                src="https://www.jcrew.com/s7-img-facade/K7754_DM3079_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=850&hei=850"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Thiccy Thigh bootcuts</h5>
+                <p class="card-text">Some baller ass Jeans.</p>
+                <!-- <div class="btn-group dropright">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Size:
+                    </button>
+                    <div class="dropdown-menu">
+                            <p class="sizeSelector">Large</p>
+                            <p class="sizeSelector">XL</p>
+                            <p class="sizeSelector">XXL</p>
+                        </div>
+                </div> -->
+
+                <div class="form-group">
+                    <label for="inputState">Size</label>
+                    <select id="inputState" class="form-control">
+                        <option selected class="sizeSelector">Large</option>
+                        <option class="sizeSelector">XL</option>
+                        <option class="sizeSelector">XXL</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bestFitModal"
+                    id="bestFitBtn">
+                    Best Fit
+                </button>
+                <!-- modal code -->
+                <div class="modal fade" id="bestFitModal" tabindex="-1" role="dialog"
+                    aria-labelledby="bestFitModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bestFitModalLabel">Calculate Your Best Fit</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="bestFitForm">
+                                    <div class="form-group">
+                                        <label for="waistSizeSelector">Waist Size</label>
+                                        <select multiple class="form-control" id="waistSizeSelector">
+                                            <option>38</option>
+                                            <option>40</option>
+                                            <option>42</option>
+                                            <option>44</option>
+                                            <option>46</option>
+                                            <option>48</option>
+                                            <option>50</option>
+                                            <option>52</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inseamSelector">Inseam</label>
+                                        <select multiple class="form-control" id="inseamSelector">
+                                            <option>16</option>
+                                            <option>18</option>
+                                            <option>20</option>
+                                            <option>22</option>
+                                            <option>24</option>
+                                        </select>
+                                    </div>
+                                    <!-- <div class="form-group">
+                                    <label for="exampleFormControlSelect2">Example multiple select</label>
+                                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect2">Example multiple select</label>
+                                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div> -->
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="name@example.com">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Calculate Best Fit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal code end -->
+                <a href="#" class="btn btn-primary">buy now</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>

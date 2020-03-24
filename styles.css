@@ -1,3 +1,12 @@
 body{
     /* background-color: black; */
 }
+.modalSubText{
+    font-size: .75rem;
+}
+/* #bestFitModalLabel{
+    text-align: center;
+} */
+.centerText{
+    text-align: center;
+}

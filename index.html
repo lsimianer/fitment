@@ -40,7 +40,10 @@
                 src="https://www.jcrew.com/s7-img-facade/K7754_DM3079_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=850&hei=850"
                 alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Thiccy Thigh bootcuts</h5>
+                <!-- input to determine clothing type -->
+                <input type='hidden' id="clothingItem" value="Thiccy Thigh Jean Bottoms">
+                <!-- input to determine clothing type -->
+                <h5 class="card-title"  >Thiccy Thigh bootcuts</h5>
                 <p class="card-text">Some baller ass Jeans.</p>
                 <!-- <div class="btn-group dropright">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
@@ -84,14 +87,14 @@
                                         <div class="form-group">
                                             <label for="heightSelector">Height</label>
                                             <select multiple class="form-control" id="heightSelector">
-                                                <option>38</option>
-                                                <option>40</option>
-                                                <option>42</option>
-                                                <option>44</option>
-                                                <option>46</option>
-                                                <option>48</option>
-                                                <option>50</option>
-                                                <option>52</option>
+                                                <option>66</option>
+                                                <option>67</option>
+                                                <option>68</option>
+                                                <option>69</option>
+                                                <option>70</option>
+                                                <option>71</option>
+                                                <option>72</option>
+                                                <option>73</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -115,6 +118,7 @@
                                                 <option>20</option>
                                                 <option>22</option>
                                                 <option>24</option>
+                                                <option>26</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -125,6 +129,7 @@
                                                 <option>16</option>
                                                 <option>17</option>
                                                 <option>18</option>
+                                                <option>20</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -135,6 +140,7 @@
                                                 <option>19</option>
                                                 <option>20</option>
                                                 <option>21</option>
+                                                <option>22</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -145,6 +151,7 @@
                                                 <option>33</option>
                                                 <option>36</option>
                                                 <option>39</option>
+                                                <option>42</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -154,9 +161,15 @@
                                         </div>
                                     </form>
                                 </div>
+                                <div class="container" id="bestFitResultContainer">
+                                    <!-- <h3 class="resultHead"> Your Best fit results</h3> -->
+                                    <div class="container" id="resultsSubCon">
+                                        
+                                    </div>
+                                </div>
 
-                            </div>
 
+                             </div> <!--ends modal body -->
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary" id='calcBestFit'

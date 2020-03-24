@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Nunito&display=swap');
+/* 
+font-family: 'Liu Jian Mao Cao', cursive;
+font-family: 'Nunito', sans-serif;
+*/
 body{
-    /* background-color: black; */
+    font-family: 'Nunito', sans-serif;
 }
 .modalSubText{
     font-size: .75rem;
@@ -9,4 +14,17 @@ body{
 } */
 .centerText{
     text-align: center;
+}
+#resultsSubCon, .resultHead{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.resultsHeaderText{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: 'Nunito', sans-serif;
+
+}
+#bestFitModalLabel{
+    font-family: 'Liu Jian Mao Cao', cursive;  
 }
